@@ -6,7 +6,7 @@
 
     <groupId>io.github.lumine1909</groupId>
     <artifactId>CustomSoundLib</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <packaging>pom</packaging>
     <modules>
         <module>core</module>
@@ -31,7 +31,7 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.4.1</version>
                 <configuration>
-                    <finalName>CustomSoundLib-1.1</finalName>
+                    <finalName>CustomSoundLib-1.2</finalName>
                     <minimizeJar>false</minimizeJar>
                     <artifactSet>
                         <includes>
@@ -43,7 +43,6 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <!-- 和 package 阶段绑定 -->
                         <phase>package</phase>
                         <goals>
                             <goal>shade</goal>
@@ -55,8 +54,8 @@
     </build>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
